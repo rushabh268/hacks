@@ -48,8 +48,8 @@ server {
       proxy_set_header        X-Real-IP $remote_addr;
       proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
       proxy_set_header        X-Forwarded-Proto $scheme;
-      proxy_set_header        Authorization "Basic aWxsdW1pby1zaGFyZWQtc2VjcmV0LWtleQ==";
-      proxy_set_header        X-Query-Vendor "test";
+      #proxy_set_header        Authorization "Basic aWxsdW1pby1zaGFyZWQtc2VjcmV0LWtleQ==";
+      #proxy_set_header        X-Query-Vendor "test";
  
       # Fix the “It appears that your reverse proxy set up is broken" error.
       proxy_pass          http://10.0.0.5:5000;
